@@ -1,14 +1,14 @@
 # Attack Plan — Kelompok 3 B
 
-## Skenario Pengujian Keamanan
+## Attack Scenarios
 
 Pengujian dilakukan pada web monitoring kompetisi robot berbasis Laravel dan MySQL yang berjalan di Ubuntu Server. Seluruh pengujian dilakukan dalam lingkungan virtual terisolasi.
 
-| No. | Skenario Serangan | Tujuan | Attacker | Target | Tools | Aktivitas Pengujian | Hasil yang Diharapkan |
-|---|---|---|---|---|---|---|---|
-| 1 | Network Reconnaissance & Port Scanning | Mengidentifikasi port dan layanan yang aktif pada server target. | Kali Linux (`192.168.3.100`) | Ubuntu Server (`192.168.3.5`) | Nmap | Memindai port dan mengidentifikasi layanan yang berjalan pada server. | Mengetahui port terbuka dan mengidentifikasi layanan yang tidak diperlukan. |
-| 2 | Web Application Security Testing | Mengidentifikasi potensi kerentanan pada aplikasi web Laravel. | Kali Linux (`192.168.3.100`) | Ubuntu Server (`192.168.3.5`) | OWASP ZAP | Menguji validasi input, konfigurasi keamanan HTTP, dan potensi kerentanan aplikasi web. | Memperoleh temuan keamanan dan rekomendasi perbaikan aplikasi. |
-| 3 | Authentication Security Testing | Mengevaluasi keamanan mekanisme autentikasi aplikasi. | Kali Linux (`192.168.3.100`) | Ubuntu Server (`192.168.3.5`) | Browser, OWASP ZAP | Menguji pembatasan percobaan login dan respons aplikasi terhadap percobaan autentikasi berulang menggunakan akun pengujian. | Memastikan autentikasi dan rate limiting berfungsi sesuai konfigurasi. |
+| No. | Kategori | Skenario Serangan | Tools | Target | Tujuan Pengujian |
+|---|---|---|---|---|---|
+| 1 | Reconnaissance | Port & Service Scanning | Nmap | Ubuntu Server (`192.168.3.5`) | Mengidentifikasi port terbuka, layanan aktif, dan potensi layanan yang tidak diperlukan. |
+| 2 | Web/API/Protokol IoT | Web Application Security Testing | OWASP ZAP | Aplikasi Laravel (`192.168.3.5`) | Mengidentifikasi potensi kerentanan aplikasi web, konfigurasi HTTP, dan masalah validasi input. |
+| 3 | Exploitation / Akses | Authentication Security Testing | Hydra | Halaman login Laravel (`192.168.3.5`) | Menguji ketahanan autentikasi terhadap percobaan login berulang menggunakan akun pengujian dan batas percobaan yang disepakati. |
 
 ## Monitoring dan Evaluasi
 
