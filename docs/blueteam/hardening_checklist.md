@@ -26,12 +26,7 @@
 | C1 | Mengonfigurasi HTTP redirect ke HTTPS menggunakan status 301 | Sudah | [HTTP to HTTPS Redirect](evidence/After%20-%20HTTP%20to%20HTTPS%20Redirect.jpeg) |
 | C2 | Membuat user database khusus aplikasi `laravel_app` | Sudah | [Database User Creation](evidence/Before%20-%20Dedicated%20Application%20Database%20User%20Creation.jpeg) |
 | C3 | Membatasi hak akses user database aplikasi terhadap database sistem | Sudah | [Database Least-Privilege Verification](evidence/After%20-%20Database%20Least-Privilege%20Verification.jpeg) |
-| C4 | Mendokumentasikan konfigurasi kredensial database pada file `.env` sebelum pengamanan | Baseline | [Laravel Environment File](evidence/Before%20-%20Laravel%20Environment%20File%20Exposing%20Database%20Credentials.jpeg) |
+| C4 | Membatasi permission file `.env` Laravel menggunakan `chmod 600` | Sudah | [Laravel .env File Permission Restricted to 600](evidence/After%20-%20Laravel%20.env%20File%20Permission%20Restricted%20to%20600.jpeg) |
 
-## Catatan
-
-- Evidence menunjukkan hasil pengujian atau konfigurasi yang sesuai dengan nama file.
-- Status keberhasilan kontrol perlu didasarkan pada hasil verifikasi aktual.
-- Screenshot baseline digunakan sebagai pembanding sebelum hardening.
 - Screenshot yang menunjukkan percobaan login gagal tidak otomatis membuktikan bahwa IP penyerang berhasil diblokir oleh Fail2ban.
 - Permission file `.env`, Nginx security headers, dan `server_tokens off` perlu diverifikasi secara terpisah jika ingin dimasukkan sebagai kontrol yang telah diterapkan.
