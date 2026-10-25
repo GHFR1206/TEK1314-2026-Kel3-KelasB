@@ -1,1 +1,0 @@
-isinya apa yh?
