@@ -1,4 +1,3 @@
-```markdown
 # Attack Plan — Kelompok 3 B
 
 ## 1. Skenario
@@ -34,7 +33,6 @@ Pengujian keamanan dilakukan terhadap web monitoring kompetisi robot berbasis La
 
 ```bash
 ping -c 4 192.168.3.5
-```
 
 **Hasil yang diharapkan:** Ubuntu Server dapat dijangkau melalui jaringan virtual.
 
