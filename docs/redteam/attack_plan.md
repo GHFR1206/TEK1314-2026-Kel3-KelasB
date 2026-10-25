@@ -76,28 +76,3 @@ nmap -sV -p 22,80,443 192.168.3.5
 **Target:** Web monitoring kompetisi robot berbasis Laravel.
 
 **Tools:** OWASP ZAP dan browser.
-
-**Aktivitas pengujian:**
-
-1. **Web Accessibility**
-   - Memastikan halaman web dapat diakses dari Kali Linux.
-   - Memeriksa respons HTTP yang diberikan oleh server.
-
-2. **HTTP/HTTPS Configuration**
-   - Memeriksa penggunaan HTTP dan HTTPS.
-   - Memastikan konfigurasi HTTPS berfungsi apabila TLS telah diterapkan.
-
-3. **Security Headers**
-   - Memeriksa keberadaan HTTP security headers.
-   - Mengevaluasi header keamanan yang belum tersedia atau belum dikonfigurasi dengan tepat.
-
-4. **Information Disclosure**
-   - Memeriksa apakah informasi sensitif, pesan kesalahan, atau informasi konfigurasi server terekspos.
-
-5. **Web Vulnerability Assessment**
-   - Melakukan pemindaian keamanan menggunakan OWASP ZAP.
-   - Mengidentifikasi potensi kerentanan pada aplikasi web.
-   - Meninjau hasil pemindaian untuk menentukan prioritas perbaikan.
-
-**Hasil yang diharapkan:** Diperoleh gambaran mengenai kondisi keamanan aplikasi web, potensi kelemahan yang ditemukan, dan rekomendasi perbaikan sebagai dasar penerapan hardening.
-```
