@@ -16,7 +16,7 @@
 |---|---|---|---|
 | B1 | Mengaktifkan UFW dengan kebijakan default deny incoming dan mengizinkan port 2222, 80, serta 443 | Sudah | [UFW Firewall](evidence/After%20-%20UFW%20Firewall%20Enabled%20with%20Restricted%20Incoming%20Access.jpeg) |
 | B2 | Membatasi akses jaringan ke port MySQL 3306 dan 33060 | Sudah | [MySQL Ports Filtered](evidence/After%20-%20MySQL%20Ports%20Filtered%20from%20Network%20Access.jpeg) |
-| B3 | Membatasi MariaDB agar hanya listen pada localhost | Sudah | [MariaDB Localhost Binding](evidence/After%20-%20MariaDB%20Bound%20to%20Localhost%20Only.jpeg) |
+| B3 | Membatasi MYSQL agar hanya listen pada localhost | Sudah | [MariaDB Localhost Binding](evidence/After%20-%20MariaDB%20Bound%20to%20Localhost%20Only.jpeg) |
 | B4 | Membandingkan port dan layanan yang terbuka sebelum dan sesudah hardening | Sudah | [Port Exposure Comparison](evidence/After%20-%20Port%20Exposure%20Comparison%20Before%20After%20Hardening.jpeg) |
 
 ## C. Data & Application
